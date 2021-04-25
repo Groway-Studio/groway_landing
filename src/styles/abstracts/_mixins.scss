@@ -1,0 +1,95 @@
+/*-------- MIXINS MEDIA QUERIES = @MEDIA @CONTENT --------
+Para usarlas sólo hay que situarse en la regla SASS correspondiente y poner, por ejemplo:
+    @include phone {
+        flex-direction: column;
+    }
+*/
+
+@mixin phone {
+    @media (max-width: #{$tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop_hd {
+    @media (min-width: #{$desktop_m}) and (max-width: #{$desktop_xl}) {
+        @content;
+    }
+}
+
+@mixin devices {
+    @media (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin ie10n11 {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+/*-------- MIXINS = @INCLUDE --------
+Para usar los mixins de SASS, debemos pasarle una variable con el siguiente formato:
+    .regla_css {
+        @include nombre_del_mixin($variable);
+    }
+*/
+
+@mixin estructura_bloque($color_bloque) {
+    @extend %estructura_bloques;
+    background-color: $color_bloque;
+}
+.bloque_blanco { @include estructura_bloque($color_blanco); }
+.bloque_gris { @include estructura_bloque($color_gris); }
+
+@mixin boton($color_fuente, $bg) {
+    @extend %boton;
+    color: $color_fuente;
+    background-color: $bg;
+    
+    a {
+        color: $color_fuente;
+    }
+}
+
+@mixin subrayado($sub) {
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, $sub), color-stop(100%, $sub));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBBB2D', GradientType=0);
+}
+.subrayado { @include subrayado($color_subrayado); }
+
+@mixin img_svg($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.icono_card { @include img_svg($icono_card, $icono_card); }
+.icono_redes { @include img_svg($icono_redes, $icono_redes); }
+
+.bloque_grilla {
+    @extend %bloque_grilla;
+}
