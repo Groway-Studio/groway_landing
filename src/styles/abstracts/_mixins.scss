@@ -1,95 +1,81 @@
-/*-------- MIXINS MEDIA QUERIES = @MEDIA @CONTENT --------
-Para usarlas sólo hay que situarse en la regla SASS correspondiente y poner, por ejemplo:
-    @include phone {
-        flex-direction: column;
+@import "./variables";
+@import "./extends";
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
     }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+
+/*
+
+0 - 600 px:         Phone
+600 - 900px:        Tablet portrait
+900 - 1200px:       Tablet landscape
+[1200 - 1800]       Where normal styles apply (desktop first approach)
+1800px + :          Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+
 */
 
-@mixin phone {
-    @media (max-width: #{$tablet - 1px}) {
-        @content;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800
     }
 }
-
-@mixin tablet {
-    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
-}
-
-@mixin desktop_hd {
-    @media (min-width: #{$desktop_m}) and (max-width: #{$desktop_xl}) {
-        @content;
-    }
-}
-
-@mixin devices {
-    @media (max-width: #{$desktop - 1px}) {
-        @content;
-    }
-}
-
-@mixin portrait {
-    @media (orientation: portrait) {
-        @content;
-    }
-}
-
-@mixin ie10n11 {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        @content;
-    }
-}
-
-/*-------- MIXINS = @INCLUDE --------
-Para usar los mixins de SASS, debemos pasarle una variable con el siguiente formato:
-    .regla_css {
-        @include nombre_del_mixin($variable);
-    }
-*/
 
 @mixin estructura_bloque($color_bloque) {
     @extend %estructura_bloques;
     background-color: $color_bloque;
 }
-.bloque_blanco { @include estructura_bloque($color_blanco); }
-.bloque_gris { @include estructura_bloque($color_gris); }
-
-@mixin boton($color_fuente, $bg) {
-    @extend %boton;
-    color: $color_fuente;
-    background-color: $bg;
-    
-    a {
-        color: $color_fuente;
-    }
-}
-
-@mixin subrayado($sub) {
-    background: rgba(255, 255, 255, 0);
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, $sub), color-stop(100%, $sub));
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, $sub 50%, $sub 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBBB2D', GradientType=0);
-}
-.subrayado { @include subrayado($color_subrayado); }
-
-@mixin img_svg($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
-}
-.icono_card { @include img_svg($icono_card, $icono_card); }
-.icono_redes { @include img_svg($icono_redes, $icono_redes); }
-
-.bloque_grilla {
-    @extend %bloque_grilla;
-}
+.block_white { @include estructura_bloque($color-plain-white); }
+.block_grey { @include estructura_bloque($color-grey-light-1); }

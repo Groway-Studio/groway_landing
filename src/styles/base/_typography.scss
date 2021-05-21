@@ -1,7 +1,17 @@
-//-------- FUENTES --------
-$fuente: 'Poppins';
-// $fuente_quote: 'Helvetica Neue médium';
-$fuente_h1: 1.5rem;
-$fuente_h2: 1.1rem;
-$fuente_h3: 1rem;
-$fuente_p: 0.9rem;
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+
+    box-sizing: border-box;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

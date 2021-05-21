@@ -1,0 +1,123 @@
+/*-------- ESTILOS GLOBALES -------- */
+
+:root {
+	/*------- Variables Fonts --------*/
+	--fontType: 'font-family: 'Roboto', sans-serif';
+	--fuente_h1: 3rem;
+	--fuente_h2: 1.1rem;
+	--fuente_h3: 1rem;
+	--fuente_p: 0.9rem;
+	/*------- Variables Colors --------*/
+	--rojo_main: #e61639;
+	--azul_main:  #0084c0;
+	--naranja_main:  #ffa82b;
+	--green_main: #6db230;
+	--black: #000000;
+	--white: #ffffff;
+
+}
+
+body {
+	font-family: var(--fontType);
+	color: var(--black);
+	text-align: left;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+/*------- Utils Class --------*/
+.estructura_bloques {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estructura_bloque_interno {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 90vh;
+    min-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque_grilla {
+    width: 90vw;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.centrar_boton {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/*------- Media Queries --------*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+}

@@ -1,28 +1,37 @@
 {
-  "name": "groway_landing",
+  "name": "parcel-react",
   "version": "1.0.0",
-  "description": "groway.studio landing",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "run-s clean",
-    "build": "parcel build src/index.html --no-source-maps",
-    "clean": "rimraf ./dist",
     "start": "parcel index.html --open",
+    "build": "rimraf dist && parcel build index.html",
+    "prebuild": "run-s clean",
+    "clean": "rimraf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "groway",
-    "studio",
-    "landing"
+    "parcel",
+    "react"
   ],
-  "author": "groway studio",
+  "author": "Saigowthamr",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.32.8"
-  },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "pure-react-carousel": "^1.27.6",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "parcel-bundler": "^1.8.1",
+    "rimraf": "^2.6.2",
+    "sass": "^1.28.0"
   }
 }

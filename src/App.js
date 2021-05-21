@@ -1,15 +1,15 @@
 import React from "react";
 
-import "./styles/index.scss";
+import './styles/main.scss';
 
-import Home from "./components/Home/Home";
+import Home from "./componentes/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Home/>
+		</div>
+	);
 }
 
 export default App;
