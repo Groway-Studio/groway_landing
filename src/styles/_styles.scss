@@ -1,0 +1,284 @@
+//-------- FUENTES --------
+$font: 'Roboto';
+$font-h1: 3rem;
+$font-h2: 1.6rem;
+$font-h3: 1rem;
+$font-p: 1.2rem;
+
+//-------- COLORES --------
+
+$color-primary: #f63372;
+$color-secondary: #fdd300;
+$color-secondary-tertiary: #6aedf7;
+$color-grey-dark: #696969;
+$color-grey-dark-2: #545454;
+$color-grey-light-1: #f4f4f4;
+$color-plain-white: #fff;
+$color-plain-black: #000;
+
+//-------- Grid --------
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+//-------- TAMAÑOS --------
+$icon-groway--main: 3rem;
+$icon-card: 4rem;
+$icon-media: 1rem;
+
+// MEDIA QUERY MANAGER
+
+/*
+
+0 - 600 px:         Phone
+600 - 900px:        Tablet portrait
+900 - 1200px:       Tablet landscape
+[1200 - 1800]       Where normal styles apply (desktop first approach)
+1800px + :          Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+
+*/
+
+//-------- MEDIAQUERIES --------
+$tablet: 600px;
+$desktop: 900px;
+$desktop_m: 1680px;
+$desktop_xl: 1920px;
+
+/*-------- MIXINS MEDIA QUERIES = @MEDIA @CONTENT --------
+Para usarlas sólo hay que situarse en la regla SASS correspondiente y poner, por ejemplo:
+    @include phone {
+        flex-direction: column;
+    }
+*/
+@mixin phone {
+    @media (max-width: #{$tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop_hd {
+    @media (min-width: #{$desktop_m}) and (max-width: #{$desktop_xl}) {
+        @content;
+    }
+}
+
+@mixin devices {
+    @media (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin ie10n11 {
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*-------- EXTENDS = @EXTENDS --------
+Los estilos creados serán inyectados en la regla SASS correspondiente, por ejemplo, con:
+    h1 {
+        @extend %fuente_h1;
+    }
+*/
+%block-structure {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+%text-block {
+    @include desktop_hd {
+        width: 40vw;
+    }
+
+    @include desktop {
+        width: 50vw;
+    }
+
+    @include tablet() {
+        width: 65vw;
+    }
+
+    @include phone() {
+        width: 80vw;
+    }
+}
+
+%grid-block {
+    width: 80vw;
+}
+
+%font-h1 {
+    font-size: $font-h1;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+%font-h2 {
+    font-size: $font-h2;
+    font-weight: bold;
+    text-align: center;
+}
+
+%font-h3 {
+    font-size: $font-h3;
+    font-weight: bold;
+}
+
+%font-p {
+    font-size: $font-p;
+    text-align: center;
+}
+
+%cambiar_alineacion {
+    text-align: left;
+
+    @include phone {
+        text-align: center;
+    }
+}
+
+
+/*-------- MIXINS = @INCLUDE --------
+Para usar los mixins de SASS, debemos pasarle una variable con el siguiente formato:
+    .regla_css {
+        @include nombre_del_mixin($variable);
+    }
+*/
+@mixin block-structure($color_bloque) {
+    @extend %block-structure;
+    background-color: $color_bloque;
+}
+
+.block_white {
+    @include block-structure($color-plain-white);
+}
+
+.block_grey {
+    @include block-structure($color-grey-light-1);
+}
+
+
+@mixin img_svg($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.icon-card {
+    @include img_svg($icon-card, $icon-card);
+}
+
+.icon-media {
+    @include img_svg($icon-media, $icon-media);
+}
+
+//-------- ESTILOS GLOBALES --------
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    @extend %font-p;
+    font-family: $font;
+    color: $color-grey-dark;
+    text-align: left;
+}
+
+html {
+    // This defines what 1rem is in the project
+    font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+    
+    @include tablet() {
+         // width < 900?
+         font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include desktop() {
+        // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include desktop_hd() {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+h1 {
+    @extend %font-h1;
+}
+
+h2 {
+    @extend %font-h2;
+}
+
+h3 {
+    @extend %font-h3;
+}
+
+p {
+    @extend %font-p;
+}
+
+//-------
+
+.grid-block {
+    @extend %grid-block;
+}

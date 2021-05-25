@@ -1,8 +1,8 @@
 import React from "react";
 
-import './styles/main.scss';
+import './index.scss';
 
-import Home from "./componentes/Home";
+import Home from "./components/Home";
 
 function App() {
 	return (

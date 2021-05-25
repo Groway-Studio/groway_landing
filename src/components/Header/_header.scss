@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.header {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  &__logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    &-tittle {
+      width: 40%;
+      color: #ff5084;
+      text-align: left;
+    }
+
+    &-p {
+      width: 33%;
+      text-align: left;
+    }
+
+    &-button {
+      width: 25%;
+      margin-top: 30px;
+      padding: 15px;
+      color: #fff;
+      border: solid;
+      border-radius: 40px;
+      background-color: $color-grey-dark-2;
+    }
+  }
+}
