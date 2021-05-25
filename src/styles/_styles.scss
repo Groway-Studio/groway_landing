@@ -1,9 +1,9 @@
 //-------- FUENTES --------
 $font: 'Roboto';
-$font-h1: 1.5rem;
-$font-h2: 1.1rem;
+$font-h1: 3rem;
+$font-h2: 1.6rem;
 $font-h3: 1rem;
-$font-p: 0.9rem;
+$font-p: 1.2rem;
 
 //-------- COLORES --------
 
@@ -191,15 +191,6 @@ Los estilos creados serán inyectados en la regla SASS correspondiente, por ejem
     }
 }
 
-%boton {
-    cursor: pointer;
-    border: none;
-    border-radius: 300px;
-    font-weight: bold;
-    height: auto;
-    padding: 0.375rem 0.75rem;
-    font-size: $font-p;
-}
 
 /*-------- MIXINS = @INCLUDE --------
 Para usar los mixins de SASS, debemos pasarle una variable con el siguiente formato:
@@ -290,10 +281,4 @@ p {
 
 .grid-block {
     @extend %grid-block;
-}
-
-.centrar_boton {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
 }
