@@ -1,3 +1,5 @@
+@import '../styles';
+
 .row {
     max-width: $grid-width;
     margin: 0 auto;
@@ -5,12 +7,12 @@
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
-        @include respond(tab-port) {
+        @include tablet {
             margin-bottom: $gutter-vertical-small;
         }
     }
 
-    @include respond(tab-port) {
+    @include tablet {
         max-width: 50rem;
         padding: 0 3rem;
     }
@@ -23,13 +25,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+            @include tablet {
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+        @include tablet {
             width: 100% !important;
         }
     }
