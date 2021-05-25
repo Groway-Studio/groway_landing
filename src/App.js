@@ -2,7 +2,7 @@ import React from "react";
 
 import './index.scss';
 
-import Home from "./componentes/Home";
+import Home from "./components/Home";
 
 function App() {
 	return (
