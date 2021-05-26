@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/github/languages/code-size/Groway-Studio/groway_landing">
     
 </p>
+<br/><br/>
 <p align="center" width="100%">
     <img width="33%" src="/src/assets/img/Brand-Groway-004.svg"> 
 </p>
