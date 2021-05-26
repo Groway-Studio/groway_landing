@@ -37,7 +37,7 @@ class Main extends React.Component {
             </div>
           </div>
         </section>
-        <section id="tu_crecimiento" className="block_white">
+        <section id="tu_crecimiento" className="block_grey">
         <div className="trabajemos_juntos">
             <div className="col-1-of-2 trabajemos_juntos__text">
               <h1 className="trabajemos_juntos__text--title"><span className="u-text--rose">Acompañamos</span> tu <span className="u-text--yellow">Crecimiento</span></h1>

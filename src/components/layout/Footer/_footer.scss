@@ -1,91 +1,4 @@
-@import '../../index.scss';
-
-// .footer {
-//     background-color: $color-grey-dark-3;
-//     padding: 5rem 0;
-//     font-size: 1.4rem;
-//     color: $color-grey-light-1;
-//     letter-spacing: 0.0725rem;
-//     font-weight: 300;
-
-//     @include tablet {
-//         padding: 4rem 0;
-//     }
-
-//     &__logo-box {
-//         text-align: center;
-//         margin-bottom: 4rem;
-//         max-width: 5rem;
-
-//         @include tablet {
-//             margin-bottom: 3 rem;
-//         }
-//     }
-
-//     &__logo {
-//         width: 15rem;
-//         height: auto;
-//     }
-
-//     .logo_main {
-//         max-width: 30rem;
-//     }
-
-//     &__navigation {
-//         border-top: 1px solid #777;
-//         padding-top: 2rem;
-//         display: inline-block;
-
-//         @include tablet {
-//             width: 100%;
-//             text-align: center;
-//         }
-//     }
-
-//     &__list {
-//         list-style-type: none;
-//     }
-
-//     &__item {
-//         display: inline-block;
-
-//         &:not(:last-child) {
-//             margin-right: 1.5rem;
-//         }
-//     }
-
-//     &__link {
-
-//         &:link,
-//         &:visited {
-//             color: $color-grey-light-1;
-//             background-color: #333;
-//             text-decoration: none;
-//             text-transform: uppercase;
-//             display: inline-block;
-//             transition: all .2s;
-//         }
-
-//         &:hover,
-//         &:active {
-//             color: $color-primary;
-//             box-shadow: 0 1rem 2rem rgba($color-plain-black, .4);
-        
-//         }
-//     }
-
-//     &__copyright {
-//         border-top: 1px solid #777;
-//         padding-top: 2rem;
-//         width: 80%;
-//         float: right;
-
-//         @include tablet {
-//             width: 100%;
-//             float: none;
-//         }
-//     }
-// }
+@import '../../../index.scss';
 
 .footer { 
     margin-top: 0;
@@ -94,38 +7,62 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-
     background-color: $color-grey-dark-3;
-    // padding: 5rem 0;
-    // font-size: 1.4rem;
-    // color: $color-grey-light-1;
-    // letter-spacing: 0.0725rem;
-    // font-weight: 300;
-    
+
     &__text {
         width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         text-align: left;
+
+        &--box-1 {
+            padding: 0 1rem;
+        }
 
         &--title {
             width: 35%;
             text-align: left;
-            color: $color-plain-black;
+            font-weight: bold;
+            color: $color-plain-white;
         }
 
         &--subtitle {
-            width: 35%;
+            width: 100%;
             text-align: left;
+            font-weight: lighter;
+            color: $color-plain-white;
+            padding-bottom: 1rem;
+
+            &--Peru {
+                text-align: left;
+                width: 35%;
+                color: $color-plain-white;
+                padding-bottom: 1rem;
+            }
+
+            a {
+                color: $color-plain-white;
+                text-decoration: none;
+            }
         }
     }
 
     &__logo {
         width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        padding-left: 5rem;
+
+        &-box {
+            top: 4rem;
+            left: 4rem;
+
+            &--img {
+                height: 25rem;
+            }
+        } 
     }
 }
