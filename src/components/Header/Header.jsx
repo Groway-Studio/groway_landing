@@ -21,9 +21,6 @@ class Header extends React.Component {
 						<button class="btn-contact">
 							<a href="mailto:contact@test.com">Conversemos</a>
 						</button>
-						{/* <button class="btn--grey-dark">Conversemos</button>
-						<button class="header__text-button">CONVERSEMOS</button>
-						<button class="btn--green">Conversemos</button> */}
 					</div>
 				</header>
 			</div>

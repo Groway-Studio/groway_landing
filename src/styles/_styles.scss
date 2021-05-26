@@ -1,5 +1,5 @@
 //-------- FUENTES --------
-$font: 'Roboto';
+$font: "Lato", sans-serif;
 $font-h1: 3rem;
 $font-h2: 1.6rem;
 $font-h3: 1rem;
@@ -12,6 +12,7 @@ $color-secondary: #fdd300;
 $color-secondary-tertiary: #6aedf7;
 $color-grey-dark: #696969;
 $color-grey-dark-2: #545454;
+$color-grey-dark-3: #2e2b2b;
 $color-grey-light-1: #f4f4f4;
 $color-plain-white: #fff;
 $color-plain-black: #000;
@@ -119,7 +120,6 @@ Para usarlas sólo hay que situarse en la regla SASS correspondiente y poner, po
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 /*-------- EXTENDS = @EXTENDS --------
 Los estilos creados serán inyectados en la regla SASS correspondiente, por ejemplo, con:
@@ -238,6 +238,7 @@ Para usar los mixins de SASS, debemos pasarle una variable con el siguiente form
 body {
     @extend %font-p;
     font-family: $font;
+    font-weight: 400;
     color: $color-grey-dark;
     text-align: left;
 }
