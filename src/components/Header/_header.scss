@@ -1,0 +1,80 @@
+@import '../../index.scss';
+
+.header {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  @include phone {
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      img {
+        width: 60%;
+      }
+    }
+    @include phone {
+      width: 100%;
+      img {
+        width: 55%;
+      }
+    } 
+  }
+
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    @include phone {
+      width: 100%;
+      margin-top: 30px;
+      justify-content: center;
+      text-align: center;
+    } 
+
+    &-tittle {
+      width: 40%;
+      color: #ff5084;
+      text-align: left;
+
+      @include tablet {
+        width: 60%;
+      } 
+      @include tablet {
+        width: 80%;
+      } 
+    }
+
+    &-p {
+      width: 40%;
+      text-align: left;
+
+      @include tablet {
+        width: 60%;
+      }  
+      @include phone {
+        width: 80%;
+      }       
+    }
+
+    &-button {
+      width: 25%;
+      margin-top: 30px;
+      padding: 15px;
+      color: #fff;
+      border: solid;
+      border-radius: 40px;
+      background-color: $color-grey-dark-2;
+    }
+  }
+}
