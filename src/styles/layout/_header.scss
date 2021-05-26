@@ -1,0 +1,94 @@
+
+/* .header {
+  height: 85vh;
+  background-color: $color-plain-white;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 150dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-color: $color-plain-white;
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media only screen and (min-resolution: 150dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+      top: 45%;
+      left: 75%;
+    }
+  }
+
+  
+} */
+
+.header {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;  
+  flex-direction: row;
+  &__logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center;  */
+    &-tittle {
+      width: 40%;
+      color: #ff5084;
+    }
+    &-p {
+      width: 40%;
+    }
+    &-button{
+      width: 25%;
+      margin-top: 30px;
+      padding: 15px;
+      color: #fff;
+      background-color: #676767;
+      border: solid;
+      border-radius: 40px;
+      
+    }
+  }
+}
+
+
