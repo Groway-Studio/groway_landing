@@ -1,22 +1,16 @@
 {
-<<<<<<< HEAD
   "homepage": "https://groway.github.io/groway_landing",
-=======
-  "homepage": "https://beta.groway.studio/",
->>>>>>> d326de4c8a82e26db9319c8a5d934738c682615d
   "name": "parcel-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html --open",
     "build": "rimraf dist && parcel build index.html",
     "clean": "rimraf ./dist ./cache",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "parcel",

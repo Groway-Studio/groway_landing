@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: row;
     width: 80%;
+    @include phone {
+        width: 100%;
+        flex-direction: column;
+    } 
     
     &__text {
         width: 50%;
@@ -15,16 +19,26 @@
         align-items: center;
         flex-direction: column;
         text-align: left;
+        @include phone {
+            width: 100%;
+        } 
 
         &--title {
             width: 35%;
             text-align: left;
             color: $color-plain-black;
+            @include phone {
+                width: 80%;
+            } 
         }
 
         &--subtitle {
             width: 35%;
             text-align: left;
+            @include phone {
+                margin-top: 2rem;
+                width: 80%;
+            } 
         }
     }
 
@@ -33,6 +47,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include phone {
+            width: 100%;
+            margin-top: 4rem;
+            img{
+                width: 80%;
+            }
+        } 
     }
 }
 
@@ -43,6 +64,10 @@
     display: flex;
     flex-direction: row;
     width: 80%;
+    @include phone {
+        width: 100%;
+        flex-direction: column;
+    } 
     
     &__text {
         width: 50%;
@@ -51,16 +76,25 @@
         align-items: center;
         flex-direction: column;
         text-align: left;
+        @include phone {
+            width: 100%;
+        } 
 
         &--title {
             width: 35%;
             text-align: left;
             color: $color-plain-black;
+            @include phone {
+                width: 80%;
+            }
         }
 
         &--subtitle {
             width: 35%;
             text-align: left;
+            @include phone {
+                width: 80%;
+            }
         }
     }
 
@@ -69,6 +103,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include phone {
+            width: 100%;
+            margin-bottom: 4rem;
+            img{
+                width: 50%;
+            }
+        } 
     }
 }
 

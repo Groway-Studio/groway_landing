@@ -1,56 +1,47 @@
 @import '../../index.scss';
 
-.header {
+.header { 
   margin-top: 0;
   margin-right: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
-
+  flex-direction: row !important;
+  width: 80%;
   @include phone {
-    flex-direction: column;
-  }
-
-  &__logo {
-    width: 50%;
+      width: 100%;
+      flex-direction: column !important;
+  } 
+  
+  &__logo{
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @include tablet {
-      img {
-        width: 60%;
-      }
-    }
     @include phone {
       width: 100%;
+      margin-left: 0;
       img {
-        width: 55%;
+        width: 70%;
       }
     } 
   }
-
   &__text {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    @include phone {
-      width: 100%;
-      margin-top: 30px;
-      justify-content: center;
-      text-align: center;
-    } 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        @include phone {
+            width: 100%;
+            margin-top: 4rem;
+        } 
 
     &-tittle {
       width: 40%;
       color: #ff5084;
       text-align: left;
-
-      @include tablet {
-        width: 60%;
-      } 
-      @include tablet {
+      @include phone {
         width: 80%;
       } 
     }
@@ -58,13 +49,9 @@
     &-p {
       width: 40%;
       text-align: left;
-
-      @include tablet {
-        width: 60%;
-      }  
       @include phone {
         width: 80%;
-      }       
+      }    
     }
 
     &-button {
@@ -75,6 +62,11 @@
       border: solid;
       border-radius: 40px;
       background-color: $color-grey-dark-2;
+  
     }
   }
 }
+
+
+
+

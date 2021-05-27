@@ -8,6 +8,10 @@
     flex-direction: row;
     width: 100%;
     background-color: $color-grey-dark-3;
+    @include phone {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
 
     &__text {
         width: 50%;
@@ -16,9 +20,15 @@
         align-items: center;
         flex-direction: row;
         text-align: left;
+        @include phone {
+            width: 100%;
+        }
 
         &--box-1 {
             padding: 0 1rem;
+            @include phone {
+                width: 50%;
+            }
         }
 
         &--title {
