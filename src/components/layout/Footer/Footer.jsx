@@ -36,7 +36,7 @@ class Footer extends React.Component {
                   Lima - Peru</p>
                 <h3 className="footer__text--title">Escribenos a:</h3>
                 <p className="footer__text--subtitle">
-                  <a href="mailto:contact@test.com">hello@groway.studio</a>
+                  <a href="mailto:hello@groway.studio">hello@groway.studio</a>
                 </p>
               </div>
             </div>

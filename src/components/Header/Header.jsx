@@ -17,9 +17,9 @@ class Header extends React.Component {
 					</div>
 					<div class="col-1-of-2 header__text">
 						<h1 class="header__text-tittle">Creamos Productos Digitales</h1>
-						<p class="header__text-p">Lorem ipsum dolor sit amet, consetetur sadipsc sed diam nonumy eirmod tempor invidunt ut labore et </p>
+						<p class="header__text-p">Hacemos realidad tus mejores ideas.</p>
 						<button class="btn-contact">
-							<a href="mailto:contact@test.com">Conversemos</a>
+							<a href="mailto:hello@groway.studio">Conversemos</a>
 						</button>
 					</div>
 				</header>
