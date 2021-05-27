@@ -29,3 +29,13 @@
 .u-margin-top-huge {
     margin-top: 10rem !important;
 }
+
+.u-text--rose {
+    color: $color-primary;
+}
+
+.u-text--yellow {
+    background-color: $color-secondary;
+    padding-right: 1.3rem;
+    padding-left: .3rem;
+}
