@@ -1,0 +1,60 @@
+@import '../../../index.scss';
+@import '../../../styles/styles.scss';
+
+.navbar__content_wraper {
+    display: none;
+
+    @include desktop { 
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        z-index: 100;
+        position: fixed;
+        padding: 7rem 5rem;
+
+        &--title {
+            width: 7rem;
+            height: 7rem;
+
+            &-1{
+                transform: rotate(-90deg) translate(-100%, 0);
+            }
+            &-2{
+                transform: rotate(-90deg) translate(-200%, 0);
+            }
+            &-3{
+                transform: rotate(-90deg) translate(-300%, 0);
+            }
+            &-4{
+                transform: rotate(-90deg) translate(-400%, 0);
+            }
+
+            a {
+                color: $color-grey-dark-3;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover {
+                color: $color-primary;
+                cursor: pointer;
+            }
+            
+        }
+    }
+// Trabajando movile 
+    // @include tablet {
+    //     flex-direction: row;
+        
+    //     &--title {
+    //         a {
+    //             color: $color-primary;
+    //             text-decoration: none;
+    //             display: inline-block;
+    //             transform: rotate(0) translate(0);
+    //         }
+    //     }
+    // } 
+
+
+}

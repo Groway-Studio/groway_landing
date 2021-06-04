@@ -260,6 +260,8 @@ html {
     @include desktop_hd() {
         font-size: 75%; //1rem = 12, 12/16
     }
+
+    scroll-behavior: smooth;
 }
 
 h1 {

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./layout/Footer/Footer";
+import Navbar from "./layout/Navbar/Navbar";
 
 class Home extends React.Component {
 	state = {
@@ -11,6 +12,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div>
+				<Navbar/>
 				<Header/>
 				<Main/>
 				<Footer/>
