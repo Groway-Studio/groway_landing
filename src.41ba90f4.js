@@ -39,4 +39,4 @@ module.exports="/brand_groway_blanco.8fba467d.svg";
 },{"react":"HdMw","./index.scss":"WrJu","./components/Home":"CojB"}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=require("react-dom"),t=u(require("./App"));function u(e){return e&&e.__esModule?e:{default:e}}(0,r.render)(e.default.createElement(t.default,null),document.getElementById("root"));
 },{"react":"HdMw","react-dom":"X9zx","./App":"FLHj"}]},{},["H99C"], null)
-//# sourceMappingURL=/src.01c33038.js.map
+//# sourceMappingURL=/src.41ba90f4.js.map
