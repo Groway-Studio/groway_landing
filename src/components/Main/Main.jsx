@@ -2,8 +2,8 @@ import React from "react";
 import "./_main.scss"
 
 import Ciclo from '../../assets/img/ciclo.svg';
-import TrabajemosJuntos from '../../assets/img/growthcurve-bro.svg';
-import Crecimiento from '../../assets/img/workingremotely-bro.svg';
+import TrabajemosJuntos from '../../assets/img/workingremotely-bro.svg';
+import Crecimiento from '../../assets/img/growthcurve-bro.svg';
 class Main extends React.Component {
 
   render() {

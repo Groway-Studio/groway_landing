@@ -38,7 +38,7 @@
         } 
 
     &-tittle {
-      width: 40%;
+      width: 80%;
       color: #ff5084;
       text-align: left;
       @include phone {
@@ -48,7 +48,7 @@
     }
 
     &-p {
-      width: 40%;
+      width: 80%;
       text-align: left;
       @include phone {
         width: 80%;
@@ -65,6 +65,10 @@
       border-radius: 40px;
       background-color: $color-grey-dark-2;
   
+
+      a {
+        font-size: 1.6rem;
+      }
     }
   }
 }

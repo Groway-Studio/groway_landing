@@ -9,6 +9,7 @@
     margin-top: 30px;
     border-radius: 40px;
     border: solid;
+    padding: 10px;
     
     &:link,
     &:visited {
@@ -35,6 +36,7 @@
     a {
         color: $color-plain-white;
         text-decoration: none;
+        
     }
     
 }

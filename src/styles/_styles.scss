@@ -3,7 +3,8 @@ $font: "Lato", sans-serif;
 $font-h1: 3rem;
 $font-h2: 1.6rem;
 $font-h3: 1rem;
-$font-p: 1.5rem;
+$font-p: 1.8rem;
+$font-a: 1.6rem;
 
 //-------- COLORES --------
 
@@ -130,7 +131,7 @@ Los estilos creados serán inyectados en la regla SASS correspondiente, por ejem
 %block-structure {
     min-width: 100%;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,6 +182,11 @@ Los estilos creados serán inyectados en la regla SASS correspondiente, por ejem
 %font-p {
     font-size: $font-p;
     text-align: center;
+}
+
+%font-a {
+    font-size: $font-a;
+    padding: 15px;
 }
 
 %cambiar_alineacion {
@@ -276,6 +282,10 @@ h3 {
 
 p {
     @extend %font-p;
+}
+
+a {
+    @extend %font-a;
 }
 
 //-------
