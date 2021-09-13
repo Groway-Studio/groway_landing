@@ -34,6 +34,18 @@
     color: $color-primary;
 }
 
+.u-align-center {
+    align-self: center;
+}
+
+.u-space-pading--medium {
+    padding: 7rem;
+    
+    @include phone {
+        padding: .5rem 0;
+    }
+}
+
 .u-text--yellow {
     background-color: $color-secondary;
     padding-right: 1.3rem;
