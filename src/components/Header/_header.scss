@@ -25,6 +25,12 @@
       }
     } 
   }
+  &__content {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    } 
+  }
   &__text {
     width: 50%;
         display: flex;
@@ -44,6 +50,7 @@
       @include phone {
         width: 80%;
         text-align: center;
+        align-self: center;
       } 
     }
 
@@ -53,6 +60,7 @@
       @include phone {
         width: 80%;
         text-align: center;
+        align-self: center;
       }    
     }
 
@@ -72,7 +80,4 @@
     }
   }
 }
-
-
-
 
