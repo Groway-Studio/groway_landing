@@ -4,6 +4,7 @@
   margin-top: 0;
   margin-right: 0;
   padding: 0;
+  padding-top: 100px;
   display: flex;
   flex-direction: row !important;
   width: 80%;
@@ -16,6 +17,7 @@
     width: 40%;
     display: flex;
     justify-content: center;
+    
     align-items: center;
     @include phone {
       width: 100%;
