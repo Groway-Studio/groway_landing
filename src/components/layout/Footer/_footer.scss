@@ -82,11 +82,44 @@
             width: 100%;
         }
         &-box {
-           top: 4rem;
+            top: 4rem;
             left: 4rem;
 
             &--img {
                 height: 25rem;
+            }
+        } 
+    }
+}
+
+.prefooter { 
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $color-grey-dark-3;
+    @include phone {
+        flex-direction: column;
+    } 
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include phone {
+            width: 100%;
+        }
+        &-box {
+            top: 4rem;
+            left: 4rem;
+
+            &--img {
+                height: 8rem;
+                padding: 2rem 0;
             }
         } 
     }

@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../../../assets/img/brand_groway_blanco.svg';
+import LogoCCL from '../../../assets/img/logoCclAsociado.svg';
 
 import "./_footer.scss";
 
@@ -12,6 +13,13 @@ class Footer extends React.Component {
     return (
       <div>
       <footer>
+          <div className="preFooter">
+            <div className="col-1-of-2 prefooter__logo">
+              <div className="prefooter__logo-box">
+                <img className="prefooter__logo-box--img" src={LogoCCL} alt="Logo CCL" />
+              </div>
+            </div>
+          </div>
           <div className="footer">
             <div className="col-1-of-2 footer__logo">
               <div className="footer__logo-box">
