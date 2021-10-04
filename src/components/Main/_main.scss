@@ -7,6 +7,7 @@
     flex-direction: row;
     width: 80%;
     
+    
     @include phone {
         width: 100%;
         flex-direction: column;
@@ -14,9 +15,10 @@
     
     &__text {
         width: 50%;
+        padding: 7rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        //align-items: center;
         flex-direction: column;
         text-align: left;
         @include phone {
@@ -33,7 +35,7 @@
         }
 
         &--subtitle {
-            
+            width: 60%;
             text-align: left;
             @include phone {
                 margin-top: 2rem;
@@ -48,7 +50,7 @@
         justify-content: center;
         align-items: center;
         img {
-            width: 100%;
+            width: 80%;
         }
         @include phone {
             width: 100%;
@@ -76,6 +78,7 @@
         width: 50%;
         display: flex;
         justify-content: center;
+        padding: 7rem;
         align-items: center;
         
         flex-direction: column;
@@ -94,7 +97,7 @@
         }
 
         &--subtitle {
-            
+            width: 60%;
             text-align: left;
             @include phone {
                 width: 80%;
@@ -105,8 +108,12 @@
     &__img {
         width: 50%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
+        //justify-content: center;
+        //align-items: center;
+        img {
+            width: 80%;
+        }
         @include phone {
             width: 100%;
             margin-bottom: 4rem;
