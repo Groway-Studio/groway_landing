@@ -131,12 +131,12 @@ Los estilos creados serán inyectados en la regla SASS correspondiente, por ejem
 %block-structure {
     min-width: 100%;
     max-width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 %text-block {
@@ -165,7 +165,7 @@ Los estilos creados serán inyectados en la regla SASS correspondiente, por ejem
     font-size: $font-h1;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 %font-h2 {
