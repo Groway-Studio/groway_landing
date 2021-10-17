@@ -10,7 +10,7 @@ class Header extends React.Component {
 
 	render() {
 		return (
-			<div class="block_white blockMain" style={{ backgroundImage:`url(${Marco})`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}} >
+			<div class="block_white blockMain" >
 				<header id="Header" class="header">
 					<div class="col-1-of-2 header__logo">
 						<img src={Logo} alt="Logo Groway" />
