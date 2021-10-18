@@ -14,10 +14,10 @@
   } 
   
   &__logo{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    //padding-top: 100px;
     align-items: center;
     @include phone {
       width: 100%;
@@ -40,7 +40,7 @@
     align-items: center;
     flex-direction: column;
     text-align: left;
-    padding-top: 100px;
+    //padding-top: 100px;
     @include phone {
         width: 100%;
         margin-top: 6rem;
@@ -48,7 +48,7 @@
 
     &-tittle {
       width: 80%;
-      color: #ff5084;
+      color: #000;
       text-align: left;
       @include phone {
         width: 80%;
@@ -70,13 +70,12 @@
     &-button {
       width: 25%;
       margin-top: 30px;
-      padding: 15px;
+      //padding: 15px;
       color: #fff;
       border: solid;
-      border-radius: 40px;
+      border-radius: 30px;
       background-color: $color-grey-dark-2;
   
-
       a {
         font-size: 1.6rem;
       }
