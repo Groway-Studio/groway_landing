@@ -167,3 +167,20 @@
         align-items: center;
     }
 }
+
+.clientes { 
+    margin-top: 0;
+    margin-right: 0;
+    h2 {
+        padding: 5px;
+    }
+    &--box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 38px;
+            padding: 15px;
+        }
+    }
+}

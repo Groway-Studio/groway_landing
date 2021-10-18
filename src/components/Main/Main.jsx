@@ -5,6 +5,10 @@ import ReactDOM from 'react-dom';
 import Ciclo from '../../assets/img/ciclo.svg';
 import TrabajemosJuntos from '../../assets/img/workingremotely-bro.svg';
 import Crecimiento from '../../assets/img/growthcurve-bro.svg';
+import WiboLogo from '../../assets/img/LogoWibo.png';
+import FidelLogo from '../../assets/img/FidelLogo.png';
+
+
 class Main extends React.Component {
 
   render() {
@@ -58,7 +62,11 @@ class Main extends React.Component {
           <div className="clientes">
             <div className="col-1-of-2">
               <h2>Confiaron en nosotros</h2>
-              
+              <br/>
+              <div className="clientes--box">
+                <a href="https://www.soywibo.com/"><img src={WiboLogo} /></a>
+                <a href="http://fidel.pe"><img src={FidelLogo} /></a>
+              </div>
             </div>
           </div>
         </section>
