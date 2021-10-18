@@ -61,7 +61,7 @@ class Main extends React.Component {
         <section id="clientes" class="block_white">
           <div className="clientes">
             <div className="col-1-of-2">
-              <h2>Confiaron en nosotros</h2>
+              <h2>Confian en nosotros</h2>
               <br/>
               <div className="clientes--box">
                 <a href="https://www.soywibo.com/"><img src={WiboLogo} /></a>
