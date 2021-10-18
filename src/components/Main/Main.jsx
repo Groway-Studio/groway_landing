@@ -25,7 +25,7 @@ class Main extends React.Component {
           </div>
         </section>
         <section id="Trabajemos_juntos" className="block_white">
-        <div className="trabajemos_juntos">
+          <div className="trabajemos_juntos">
             <div className="col-1-of-2 trabajemos_juntos__img u-space-pading--medium">
               <img src={TrabajemosJuntos} alt="Trabajemos juntos" />
             </div>
@@ -39,7 +39,7 @@ class Main extends React.Component {
           </div>
         </section>
         <section id="tu_crecimiento" className="block_grey">
-        <div className="trabajemos_juntos">
+          <div className="trabajemos_juntos">
             <div className="col-1-of-2 trabajemos_juntos__text u-margin-bottom-small">
               <div>
                 <h1 className="trabajemos_juntos__text--title"><span className="u-text--rose">Acompañamos</span> tu <span className="u-text--yellow">Crecimiento</span></h1>
@@ -54,6 +54,15 @@ class Main extends React.Component {
             </div>
           </div>
         </section>
+        <section id="clientes" class="block_white">
+          <div className="clientes">
+            <div className="col-1-of-2">
+              <h2>Confiaron en nosotros</h2>
+              
+            </div>
+          </div>
+        </section>
+        <hr></hr>
       </div>
     );
   }

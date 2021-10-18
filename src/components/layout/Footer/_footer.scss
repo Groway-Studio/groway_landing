@@ -116,10 +116,17 @@
         &-box {
             top: 4rem;
             left: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &--img {
-                height: 8rem;
-                padding: 3rem 0;
+                height: 5rem;
+                padding: 4rem;
+            }
+            &--img2 {
+                height: 9rem;
+                padding: 4rem;
             }
         } 
     }
