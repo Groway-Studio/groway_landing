@@ -68,7 +68,6 @@ class Main extends React.Component {
                 <a href="https://www.soywibo.com/"><img src={WiboLogo} /></a>
                 <a href="https://fidel.pe"><img src={FidelLogo} /></a>
                 <a href="https://silabuz.com"><img src={SilabuzLogo} /></a>
-                SilabuzLogo
               </div>
             </div>
           </div>
