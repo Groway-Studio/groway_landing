@@ -7,6 +7,7 @@ import TrabajemosJuntos from '../../assets/img/workingremotely-bro.svg';
 import Crecimiento from '../../assets/img/growthcurve-bro.svg';
 import WiboLogo from '../../assets/img/LogoWibo.png';
 import FidelLogo from '../../assets/img/FidelLogo.png';
+import SilabuzLogo from '../../assets/img/silabuzLogo.png';
 
 
 class Main extends React.Component {
@@ -65,7 +66,9 @@ class Main extends React.Component {
               <br/>
               <div className="clientes--box">
                 <a href="https://www.soywibo.com/"><img src={WiboLogo} /></a>
-                <a href="http://fidel.pe"><img src={FidelLogo} /></a>
+                <a href="https://fidel.pe"><img src={FidelLogo} /></a>
+                <a href="https://silabuz.com"><img src={SilabuzLogo} /></a>
+                SilabuzLogo
               </div>
             </div>
           </div>
