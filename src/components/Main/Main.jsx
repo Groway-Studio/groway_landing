@@ -36,10 +36,7 @@ class Main extends React.Component {
             </div>
             <div className="col-1-of-2 trabajemos_juntos__text">
               <h1 className="trabajemos_juntos__text--title"><span className="u-text--rose">Trabajemos</span> <span className="u-text--yellow">Juntos</span></h1>
-              <p className="trabajemos_juntos__text--subtitle">Una buena idea es el punto de partida en el camino para lograr un producto exitoso y este
-                debe ser llevada al mercado lo mas rapido posible para validar nuestras hipótesis e iniciar 
-                el proceso de ajuste y mejora continua para acercarnos cada vez mas al producto que nuestros 
-                usuarios amaran.</p>
+              <p className="trabajemos_juntos__text--subtitle">Especialistas con experiencia en empresas lideres de la región, startups y unicornios te acompañaran durante todo el proceso de creación y desarrollo.</p>
             </div>
           </div>
         </section>
