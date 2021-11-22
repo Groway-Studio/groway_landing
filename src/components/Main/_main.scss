@@ -171,16 +171,31 @@
 .clientes { 
     margin-top: 0;
     margin-right: 0;
+    width: 100%;
+
     h2 {
-        padding: 5px;
+        padding: 25px;
+        font-weight: normal;
     }
     &--box {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         img {
             height: 38px;
-            padding: 15px;
+            margin: 15px;
+        }
+        .awards {
+            height: 64px;
+        }
+        a {
+            padding: 25px;
+            width: 300px;
+            text-align: center;
+            text-decoration: none;
+            color: #666;
+            font-size: 1.2rem;
         }
     }
 }

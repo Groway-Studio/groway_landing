@@ -5,10 +5,13 @@ import ReactDOM from 'react-dom';
 import Ciclo from '../../assets/img/ciclo.svg';
 import TrabajemosJuntos from '../../assets/img/workingremotely-bro.svg';
 import Crecimiento from '../../assets/img/growthcurve-bro.svg';
-import WiboLogo from '../../assets/img/LogoWibo.png';
+import WiboLogo from '../../assets/img/logo_small.png';
 import FidelLogo from '../../assets/img/FidelLogo.png';
-import SilabuzLogo from '../../assets/img/silabuzLogo.png';
-
+import SilabuzLogo from '../../assets/img/silabuz1.png';
+import TranviaLogo from '../../assets/img/tranviaLogo.svg';
+import LogoCCL from '../../assets/img/logoCclAsociado.svg';
+import LogoASEP from '../../assets/img/logo-asep.gif';
+import LogoTWA from '../../assets/img/twa.svg';
 
 class Main extends React.Component {
 
@@ -62,14 +65,44 @@ class Main extends React.Component {
               <h2>Confian en nosotros</h2>
               <br/>
               <div className="clientes--box">
-                <a href="https://www.soywibo.com/"><img src={WiboLogo} /></a>
-                <a href="https://fidel.pe"><img src={FidelLogo} /></a>
-                <a href="https://silabuz.com"><img src={SilabuzLogo} /></a>
+                <a href="https://www.soywibo.com/"  target="_blank">
+                  <img src={WiboLogo} />
+                  <p>Plataforma para órdenes digitales que permite crear experiencias de compra inteligentes, modernas y seguras en ecosistemas y negocios de todo tipo.</p>
+                </a>
+                <a href="https://fidel.pe"  target="_blank">
+                  <img src={FidelLogo} />
+                  <p>Gana dinero con tus compras, compra en los emprendimientos afiliados y gana Cashback, es decir, gana dinero</p>
+                </a>
+                <a href="https://silabuz.com"  target="_blank">
+                  <img src={SilabuzLogo} />
+                  <p>Cursos de programación en línea para niños y jóvenes entre 10 y 18 años.</p>
+                </a>
+                <a href="#"  target="_blank">
+                  <img src={TranviaLogo} />
+                  <p>Plataforma de reserva y atencion de citas medicas para clinicas y doctores independientes.</p>
+                </a>
+              </div> 
+              <br/><br/><br/><br/> 
+              <h2>Alianzas Estrategicas</h2>
+              <br/>
+              <div className="clientes--box">
+                <img  src={LogoCCL} alt="Logo CCL" />
+                <img src={LogoASEP} alt="Logo ASEP" />
+              </div>
+   
+              <br/><br/><br/><br/>
+           
+              <h2>Reconocimientos</h2>
+              <br/>
+              <div className="clientes--box">
+                <a href="https://thewakeupgroup.org" target="_blank">
+                  <img  src={LogoTWA} class="awards" alt="Logo TWA" />
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <hr></hr>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
       </div>
     );
   }
