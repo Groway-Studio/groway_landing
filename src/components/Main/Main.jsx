@@ -12,6 +12,7 @@ import TranviaLogo from '../../assets/img/tranviaLogo.svg';
 import LogoCCL from '../../assets/img/logoCclAsociado.svg';
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
+import EPAPYME from '../../assets/img/EPA_Pyme.png';
 
 class Main extends React.Component {
 
@@ -96,7 +97,11 @@ class Main extends React.Component {
               <br/>
               <div className="clientes--box">
                 <a href="https://thewakeupgroup.org" target="_blank">
-                  <img  src={LogoTWA} class="awards" alt="Logo TWA" />
+                  <img  src={EPAPYME} class="awards" alt="Logo EPAPYME" />
+                  
+                </a>
+                <a href="https://thewakeupgroup.org" target="_blank">
+                  <img  src={EPAPYME} class="awards" alt="Logo EPAPYME" />
                 </a>
               </div>
             </div>
