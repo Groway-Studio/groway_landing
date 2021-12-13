@@ -13,6 +13,7 @@ import LogoCCL from '../../assets/img/logoCclAsociado.svg';
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
 import EPAPYME from '../../assets/img/EPA_Pyme.png';
+import LogoASPEM from '../../assets/img/logo-asepem.png';
 
 class Main extends React.Component {
 
@@ -89,6 +90,7 @@ class Main extends React.Component {
               <div className="clientes--box">
                 <img  src={LogoCCL} alt="Logo CCL" />
                 <img src={LogoASEP} alt="Logo ASEP" />
+                <img src={LogoASPEM} alt="Logo ASPEM" />
               </div>
    
               <br/><br/><br/><br/>
@@ -99,7 +101,7 @@ class Main extends React.Component {
 
                 <a href="#" target="_blank">
                   <img  src={LogoTWA} class="awards" alt="Logo TWA" />
-
+                </a>
                 <a href="https://thewakeupgroup.org" target="_blank">
                   <img  src={EPAPYME} class="awards" alt="Logo EPAPYME" />
 
