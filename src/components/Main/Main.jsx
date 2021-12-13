@@ -95,7 +95,7 @@ class Main extends React.Component {
               <h2>Reconocimientos</h2>
               <br/>
               <div className="clientes--box">
-                <a href="https://thewakeupgroup.org" target="_blank">
+                <a href="#" target="_blank">
                   <img  src={LogoTWA} class="awards" alt="Logo TWA" />
                 </a>
               </div>
