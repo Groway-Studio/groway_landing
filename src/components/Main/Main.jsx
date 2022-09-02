@@ -13,7 +13,7 @@ import LogoCCL from '../../assets/img/logoCclAsociado.svg';
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
 import EPAPYME from '../../assets/img/EPA_Pyme.png';
-import LogoASPEM from '../../assets/img/logo-asepem.png';
+import LogoASPEM from '../../assets/img/logo-aspem.png';
 
 class Main extends React.Component {
 
