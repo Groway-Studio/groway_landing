@@ -2,18 +2,18 @@ import "./_main.scss"
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Ciclo from './../../assets/img/ciclo.svg';
-import TrabajemosJuntos from './../../assets/img/workingremotely-bro.svg';
-import Crecimiento from './../../assets/img/growthcurve-bro.svg';
-import WiboLogo from './../../assets/img/logo_small.png';
-import FidelLogo from './../../assets/img/FidelLogo.png';
-import SilabuzLogo from './../../assets/img/silabuz1.png';
-import TranviaLogo from './../../assets/img/tranviaLogo.svg';
-import LogoCCL from './../../assets/img/logoCclAsociado.svg';
-import LogoASEP from './../../assets/img/logo-asep.gif';
-import LogoTWA from './../../assets/img/twa.svg';
-import EPAPYME from './../../assets/img/EPA_Pyme.png';
-import LogoASPEM from './../../assets/img/logo-aspem.png';
+import Ciclo from '../../assets/img/ciclo.svg';
+import TrabajemosJuntos from '../../assets/img/workingremotely-bro.svg';
+import Crecimiento from '../../assets/img/growthcurve-bro.svg';
+import WiboLogo from '../../assets/img/logo_small.png';
+import FidelLogo from '../../assets/img/FidelLogo.png';
+import SilabuzLogo from '../../assets/img/silabuz1.png';
+import TranviaLogo from '../../assets/img/tranviaLogo.svg';
+import LogoCCL from '../../assets/img/logoCclAsociado.svg';
+import LogoASEP from '../../assets/img/logo-asep.gif';
+import LogoTWA from '../../assets/img/twa.svg';
+import EPAPYME from '../../assets/img/EPA_Pyme.png';
+import LogoASPEM from '../../assets/img/logo-aspem.png';
 
 class Main extends React.Component {
 
