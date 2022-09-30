@@ -23,6 +23,7 @@
     "pure-react-carousel": "^1.27.6",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
+    "@parcel/transformer-sass": "^2.0.0",
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
