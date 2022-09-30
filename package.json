@@ -3,7 +3,7 @@
   "name": "parcel-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
