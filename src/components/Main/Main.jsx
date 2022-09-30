@@ -9,6 +9,7 @@ import WiboLogo from '../../assets/img/logo_small.png';
 import FidelLogo from '../../assets/img/FidelLogo.png';
 import SilabuzLogo from '../../assets/img/silabuz1.png';
 import TranviaLogo from '../../assets/img/tranviaLogo.svg';
+import LaCanastaDeHoy from '../../assets/img/LaCanastaDeHoy.png';
 import LogoCCL from '../../assets/img/LogoCclAsociado.svg'
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
@@ -71,7 +72,7 @@ class Main extends React.Component {
                   <img src={WiboLogo} />
                   <p>Plataforma para órdenes digitales que permite crear experiencias de compra inteligentes, modernas y seguras en ecosistemas y negocios de todo tipo.</p>
                 </a>
-                <a href="https://fidel.pe" class="customers"  target="_blank">
+                <a href="#" class="customers"  target="_blank">
                   <img src={FidelLogo} />
                   <p>Gana dinero con tus compras, compra en los emprendimientos afiliados y gana Cashback, es decir, gana dinero</p>
                 </a>
@@ -82,6 +83,10 @@ class Main extends React.Component {
                 <a href="#" class="customers"  target="_blank">
                   <img src={TranviaLogo} />
                   <p>Plataforma de reserva y atencion de citas medicas para clinicas y doctores independientes.</p>
+                </a>
+                <a href="http://lacanastadehoy.com" class="customers"  target="_blank">
+                  <img className="laCanastaLogo" src={LaCanastaDeHoy} />
+                  <p>Ofrecer alimentos del hogar sostenibles. Logrando un menú de mejor calidad, barato, diverso y coeficiente.</p>
                 </a>
               </div> 
               <br/><br/><br/><br/> 
