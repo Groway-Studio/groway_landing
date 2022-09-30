@@ -67,19 +67,19 @@ class Main extends React.Component {
               <h2>Confian en nosotros</h2>
               <br/>
               <div className="clientes--box">
-                <a href="https://www.soywibo.com/"  target="_blank">
+                <a href="https://www.soywibo.com/" class="customers"  target="_blank">
                   <img src={WiboLogo} />
                   <p>Plataforma para órdenes digitales que permite crear experiencias de compra inteligentes, modernas y seguras en ecosistemas y negocios de todo tipo.</p>
                 </a>
-                <a href="https://fidel.pe"  target="_blank">
+                <a href="https://fidel.pe" class="customers"  target="_blank">
                   <img src={FidelLogo} />
                   <p>Gana dinero con tus compras, compra en los emprendimientos afiliados y gana Cashback, es decir, gana dinero</p>
                 </a>
-                <a href="https://silabuz.com"  target="_blank">
+                <a href="https://silabuz.com" class="customers"  target="_blank">
                   <img src={SilabuzLogo} />
                   <p>Cursos de programación en línea para niños y jóvenes entre 10 y 18 años.</p>
                 </a>
-                <a href="#"  target="_blank">
+                <a href="#" class="customers"  target="_blank">
                   <img src={TranviaLogo} />
                   <p>Plataforma de reserva y atencion de citas medicas para clinicas y doctores independientes.</p>
                 </a>
@@ -87,25 +87,28 @@ class Main extends React.Component {
               <br/><br/><br/><br/> 
               <h2>Alianzas Estrategicas</h2>
               <br/>
-              <div className="clientes--box">
-                <img  src={LogoCCL} alt="Logo CCL" />
-                <img src={LogoASEP} alt="Logo ASEP" />
-                <img src={LogoASPEM} alt="Logo ASPEM" />
+              <div className="clientes--box ">
+                <div className="alliances">
+                  <img  src={LogoCCL}  alt="Logo CCL" />
+                  <img src={LogoASEP} alt="Logo ASEP" />
+                  <img src={LogoASPEM} alt="Logo ASPEM" />
+                </div>
               </div>
    
               <br/><br/><br/><br/>
            
               <h2>Reconocimientos</h2>
               <br/>
-              <div className="clientes--box">
+              <div className="clientes--box ">
+                <div className="awards">
+                  <a href="#" target="_blank">
+                    <img  src={LogoTWA} class="awards" alt="Logo TWA" />
+                  </a>
+                  <a href="https://thewakeupgroup.org" target="_blank">
+                    <img  src={EPAPYME} class="awards" alt="Logo EPAPYME" />
 
-                <a href="#" target="_blank">
-                  <img  src={LogoTWA} class="awards" alt="Logo TWA" />
-                </a>
-                <a href="https://thewakeupgroup.org" target="_blank">
-                  <img  src={EPAPYME} class="awards" alt="Logo EPAPYME" />
-
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
