@@ -293,3 +293,26 @@ a {
 .grid-block {
     @extend %grid-block;
 }
+
+
+.custom-shape-divider-bottom-1664527124 {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664527124 svg {
+    // position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 116px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1664527124 .shape-fill {
+    fill: #F4F4F4;
+}
