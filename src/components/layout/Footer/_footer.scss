@@ -5,6 +5,8 @@
     margin-top: 0;
     margin-right: 0;
     padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -36,7 +38,7 @@
             text-align: left;
             font-weight: bold;
             color: $color-plain-white;
-            font-size: $font-h2;
+            font-size: 1.5rem;
             @include phone {
                 font-size: $font-h3;
             }
@@ -48,7 +50,7 @@
             font-weight: lighter;
             color: $color-plain-white;
             padding-bottom: 1rem;
-            font-size: $font-h2;
+            font-size: 1.3rem;
             @include phone {
                 font-size: $font-h3;
             }
@@ -58,7 +60,7 @@
                 width: 35%;
                 color: $color-plain-white;
                 padding-bottom: 1rem;
-                font-size: $font-h2;
+                font-size: 1.3rem;
                 @include phone {
                     width: 80%;
                     font-size: $font-h3;
@@ -86,7 +88,7 @@
             left: 4rem;
 
             &--img {
-                height: 25rem;
+                height: 15rem;
             }
         } 
     }
