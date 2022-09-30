@@ -9,7 +9,7 @@ import WiboLogo from '../../assets/img/logo_small.png';
 import FidelLogo from '../../assets/img/FidelLogo.png';
 import SilabuzLogo from '../../assets/img/silabuz1.png';
 import TranviaLogo from '../../assets/img/tranviaLogo.svg';
-import LogoCCL from '../../assets/img/logoCclAsociado.svg';
+import LogoCCL from '../../assets/img/LogoCclAsociado.svg'
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
 import EPAPYME from '../../assets/img/EPA_Pyme.png';
