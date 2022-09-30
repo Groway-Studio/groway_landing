@@ -180,6 +180,12 @@
     p {
         font-size: 1.4rem;
     }
+    .alliances{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     &--box {
         display: flex;
         justify-content: center;
@@ -192,9 +198,11 @@
             height: 38px;
         }
         .alliances img {
+            padding: 10px;
             height: 54px;
         }
         .awards img {
+            padding: 10px;
             height: 72px;
         }
         a {

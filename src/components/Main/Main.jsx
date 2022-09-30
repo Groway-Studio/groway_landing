@@ -13,6 +13,8 @@ import LaCanastaDeHoy from '../../assets/img/LaCanastaDeHoy.png';
 import LogoCCL from '../../assets/img/LogoCclAsociado.svg'
 import LogoASEP from '../../assets/img/logo-asep.gif';
 import LogoTWA from '../../assets/img/twa.svg';
+import HeydruLogo from '../../assets/img/HeydruLogo.svg';
+import CiclosLogo from '../../assets/img/CiclosLogo.svg';
 import EPAPYME from '../../assets/img/EPA_Pyme.png';
 import LogoASPEM from '../../assets/img/logo-aspem.png';
 
@@ -65,7 +67,7 @@ class Main extends React.Component {
         <section id="clientes" class="block_white">
           <div className="clientes">
             <div className="col-1-of-2">
-              <h2>Confian en nosotros</h2>
+              <h2>Ideas hechas realidad</h2>
               <br/>
               <div className="clientes--box">
                 <a href="https://www.soywibo.com/" class="customers"  target="_blank">
@@ -90,13 +92,15 @@ class Main extends React.Component {
                 </a>
               </div> 
               <br/><br/><br/><br/> 
-              <h2>Alianzas Estrategicas</h2>
+              <h2>Partners y Alianzas Estrategicas</h2>
               <br/>
               <div className="clientes--box ">
                 <div className="alliances">
                   <img  src={LogoCCL}  alt="Logo CCL" />
                   <img src={LogoASEP} alt="Logo ASEP" />
                   <img src={LogoASPEM} alt="Logo ASPEM" />
+                  <img src={HeydruLogo} alt="Logo Heydru" />
+                  <img src={CiclosLogo}  alt="Logo Ciclos" />
                 </div>
               </div>
    
