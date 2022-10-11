@@ -18,8 +18,8 @@ class Header extends React.Component {
 					</div>
 					<div class="col-1-of-2 header__text">
 						<div class="header__content">
-							<h1 class="header__text-tittle">Creamos Productos Digitales</h1>
-							<p class="header__text-p">Hacemos realidad tus mejores ideas.</p>
+							<h1 class="header__text-tittle">Hacemos realidad tus mejores ideas</h1>
+							<p class="header__text-p">En Groway construimos productos digitales para emprendedores y empresas innovadoras de todo latinoamerica</p>
 							<button class="btn-contact u-align-center">
 								<a href="mailto:hello@groway.studio">Conversemos</a>
 							</button>
